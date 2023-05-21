@@ -37,8 +37,9 @@ const Login = () => {
         <Text style={styles.googleButtonText}>Continue with Google</Text>
       </TouchableOpacity>
       <Text style={styles.agreeText}>
-        By continuing, you agree to our <Text>Terms and Conditions</Text> and{" "}
-        <Text>Privacy Policy</Text>.
+        By continuing, you agree to our{" "}
+        <Text style={styles.bold}>Terms and Conditions</Text> and{" "}
+        <Text style={styles.bold}>Privacy Policy</Text>.
       </Text>
     </SafeAreaView>
   );
@@ -90,7 +91,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 30,
-    marginTop: "17%",
+    marginTop: "22%",
   },
   orText: {
     color: "#666666",
@@ -122,9 +123,14 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   agreeText: {
+    marginTop: "10%",
     textAlign: "center",
     fontSize: 10,
     width: "60%",
+    fontWeight: "300",
+  },
+  bold: {
+    fontWeight: "600",
   },
 });
 
