@@ -1,10 +1,12 @@
 import { View, Text, SafeAreaView, StyleSheet } from "react-native";
 import React from "react";
 import Button from "../../components/onboarding/Button";
+import TopBar from "../../components/onboarding/TopBar";
 
 const StepOneToFour = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <TopBar />
       <Text style={styles.mainText}>Walkthrough Step 1</Text>
       <Text style={styles.secondaryText}>
         <Text style={styles.bold}>Create Your Journal Entry:</Text> Tap on the
