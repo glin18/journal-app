@@ -1,4 +1,11 @@
-import { View, StyleSheet, Text, SafeAreaView, TextInput } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Text,
+  SafeAreaView,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 
 const Login = () => {
@@ -15,6 +22,9 @@ const Login = () => {
         placeholder="Password"
         placeholderTextColor="#19242E"
       />
+      <TouchableOpacity style={styles.loginButton}>
+        <Text style={styles.loginButtonText}>Log In</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
@@ -42,6 +52,22 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 1, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 3,
+  },
+  loginButton: {
+    marginTop: "5%",
+    backgroundColor: "#071116",
+    padding: 10,
+    width: "65%",
+    height: 60,
+    borderRadius: 15,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  loginButtonText: {
+    color: "white",
+    textAlign: "center",
+    fontWeight: "500",
+    fontSize: 20,
   },
 });
 
