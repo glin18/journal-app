@@ -26,10 +26,10 @@ const Login = () => {
         <Text style={styles.loginButtonText}>Log In</Text>
       </TouchableOpacity>
       <Text>Forgot Password?</Text>
-      <View>
-        <View />
-        <Text>OR</Text>
-        <View />
+      <View style={styles.orContainer}>
+        <View style={styles.horizontalLine} />
+        <Text style={styles.orText}>OR</Text>
+        <View style={styles.horizontalLine} />
       </View>
     </SafeAreaView>
   );
@@ -76,7 +76,23 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 20,
   },
-  horizontalLine: {},
+  orContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 30,
+  },
+  orText: {
+    color: "#666666",
+    fontWeight: "400",
+    fontSize: 18,
+    fontFamily: "Helvetica Neue",
+  },
+  horizontalLine: {
+    borderBottomColor: "#666666",
+    borderBottomWidth: 1,
+    width: "30%",
+  },
 });
 
 export default Login;
