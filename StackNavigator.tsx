@@ -4,12 +4,18 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./screens/auth/Login";
 import Signup from "./screens/auth/Signup";
+import Start from "./screens/onboarding/Start";
 
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
   return (
     <Stack.Navigator>
+      <Stack.Screen
+        name="Start"
+        component={Start}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen
         name="Signup"
         component={Signup}
