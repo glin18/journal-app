@@ -12,6 +12,10 @@ import React from "react";
 const Login = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <Image
+        style={styles.dolphin}
+        source={require("../assets/echodolphin.png")}
+      />
       <Text style={styles.login}>Log In</Text>
       <TextInput
         style={styles.input}
@@ -54,7 +58,7 @@ const styles = StyleSheet.create({
   },
   login: {
     fontSize: 36,
-    marginTop: "20%",
+    marginTop: "25%",
     marginBottom: "12%",
   },
   input: {
@@ -131,6 +135,13 @@ const styles = StyleSheet.create({
   },
   bold: {
     fontWeight: "600",
+  },
+  dolphin: {
+    position: "absolute",
+    left: "-20%",
+    top: "2%",
+    width: 190,
+    height: 322,
   },
 });
 
