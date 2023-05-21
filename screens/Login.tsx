@@ -25,6 +25,12 @@ const Login = () => {
       <TouchableOpacity style={styles.loginButton}>
         <Text style={styles.loginButtonText}>Log In</Text>
       </TouchableOpacity>
+      <Text>Forgot Password?</Text>
+      <View>
+        <View />
+        <Text>OR</Text>
+        <View />
+      </View>
     </SafeAreaView>
   );
 };
@@ -34,14 +40,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#859FAB",
     alignItems: "center",
-    gap: 30,
+    gap: 10,
   },
   login: {
     fontSize: 36,
     marginTop: "20%",
-    marginBottom: "10%",
+    marginBottom: "12%",
   },
   input: {
+    marginBottom: "5%",
     padding: 15,
     width: "80%",
     height: 55,
@@ -69,6 +76,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 20,
   },
+  horizontalLine: {},
 });
 
 export default Login;
