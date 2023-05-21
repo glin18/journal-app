@@ -2,8 +2,8 @@ import { View, Text } from "react-native";
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Login from "./screens/Login";
-import Signup from "./screens/Signup";
+import Login from "./screens/auth/Login";
+import Signup from "./screens/auth/Signup";
 
 const Stack = createNativeStackNavigator();
 

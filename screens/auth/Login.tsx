@@ -9,19 +9,14 @@ import {
 } from "react-native";
 import React from "react";
 
-const Signup = () => {
+const Login = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Image
         style={styles.dolphin}
-        source={require("../assets/echodolphin.png")}
+        source={require("../../assets/echodolphin.png")}
       />
-      <Text style={styles.signup}>Sign up</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Name"
-        placeholderTextColor="#19242E"
-      />
+      <Text style={styles.login}>Log In</Text>
       <TextInput
         style={styles.input}
         placeholder="Email"
@@ -32,16 +27,17 @@ const Signup = () => {
         placeholder="Password"
         placeholderTextColor="#19242E"
       />
-      <TouchableOpacity style={styles.signupButton}>
-        <Text style={styles.signupButtonText}>Sign up</Text>
+      <TouchableOpacity style={styles.loginButton}>
+        <Text style={styles.loginButtonText}>Log In</Text>
       </TouchableOpacity>
+      <Text>Forgot Password?</Text>
       <View style={styles.orContainer}>
         <View style={styles.horizontalLine} />
         <Text style={styles.orText}>OR</Text>
         <View style={styles.horizontalLine} />
       </View>
       <TouchableOpacity style={styles.googleButton}>
-        <Image source={require("../assets/google.png")} />
+        <Image source={require("../../assets/google.png")} />
         <Text style={styles.googleButtonText}>Continue with Google</Text>
       </TouchableOpacity>
       <Text style={styles.agreeText}>
@@ -60,7 +56,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 10,
   },
-  signup: {
+  login: {
     fontSize: 36,
     marginTop: "25%",
     marginBottom: "12%",
@@ -78,7 +74,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 3,
   },
-  signupButton: {
+  loginButton: {
     marginTop: "5%",
     backgroundColor: "#071116",
     padding: 10,
@@ -88,7 +84,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  signupButtonText: {
+  loginButtonText: {
     color: "white",
     textAlign: "center",
     fontWeight: "500",
@@ -99,7 +95,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 30,
-    marginTop: "7.5%",
+    marginTop: "20%",
   },
   orText: {
     color: "#666666",
@@ -113,7 +109,7 @@ const styles = StyleSheet.create({
     width: "30%",
   },
   googleButton: {
-    marginTop: "7.5%",
+    marginTop: "5%",
     backgroundColor: "#071116",
     padding: 10,
     width: "65%",
@@ -131,7 +127,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   agreeText: {
-    marginTop: "7%",
+    marginTop: "10%",
     textAlign: "center",
     fontSize: 10,
     width: "60%",
@@ -150,4 +146,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Signup;
+export default Login;
