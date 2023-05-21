@@ -6,7 +6,7 @@ import Login from "./screens/auth/Login";
 import Signup from "./screens/auth/Signup";
 import Start from "./screens/onboarding/Start";
 import StepZero from "./screens/onboarding/StepZero";
-import StepOne from "./screens/onboarding/StepOne";
+import StepOneToFour from "./screens/onboarding/StepOneToFour";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,8 +16,8 @@ const StackNavigator = () => {
     // A separate stack for the onboarding
     <Stack.Navigator>
       <Stack.Screen
-        name="StepOne"
-        component={StepOne}
+        name="StepOneToFour"
+        component={StepOneToFour}
         options={{ headerShown: false }}
       />
       <Stack.Screen

@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const StepOne = () => {
+const StepOneToFour = () => {
   return (
     <View>
       <Text>StepOne</Text>
@@ -9,4 +9,4 @@ const StepOne = () => {
   );
 };
 
-export default StepOne;
+export default StepOneToFour;
