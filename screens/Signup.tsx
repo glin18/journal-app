@@ -16,7 +16,7 @@ const Signup = () => {
         style={styles.dolphin}
         source={require("../assets/echodolphin.png")}
       />
-      <Text style={styles.login}>Sign up</Text>
+      <Text style={styles.signup}>Sign up</Text>
       <TextInput
         style={styles.input}
         placeholder="Name"
@@ -32,8 +32,8 @@ const Signup = () => {
         placeholder="Password"
         placeholderTextColor="#19242E"
       />
-      <TouchableOpacity style={styles.loginButton}>
-        <Text style={styles.loginButtonText}>Sign up</Text>
+      <TouchableOpacity style={styles.signupButton}>
+        <Text style={styles.signupButtonText}>Sign up</Text>
       </TouchableOpacity>
       <View style={styles.orContainer}>
         <View style={styles.horizontalLine} />
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 10,
   },
-  login: {
+  signup: {
     fontSize: 36,
     marginTop: "25%",
     marginBottom: "12%",
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 3,
   },
-  loginButton: {
+  signupButton: {
     marginTop: "5%",
     backgroundColor: "#071116",
     padding: 10,
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  loginButtonText: {
+  signupButtonText: {
     color: "white",
     textAlign: "center",
     fontWeight: "500",
@@ -131,11 +131,12 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   agreeText: {
-    marginTop: "10%",
+    marginTop: "7%",
     textAlign: "center",
     fontSize: 10,
     width: "60%",
     fontWeight: "300",
+    lineHeight: 18,
   },
   bold: {
     fontWeight: "600",

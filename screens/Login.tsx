@@ -132,6 +132,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
     width: "60%",
     fontWeight: "300",
+    lineHeight: 18,
   },
   bold: {
     fontWeight: "600",
