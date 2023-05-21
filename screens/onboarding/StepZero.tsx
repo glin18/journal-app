@@ -1,5 +1,6 @@
 import { View, Text, SafeAreaView, StyleSheet, Image } from "react-native";
 import React from "react";
+import Button from "../../components/onboarding/Button";
 
 const StepZero = () => {
   return (
@@ -13,6 +14,7 @@ const StepZero = () => {
         goals, and embark on a transformative journey to improve your
         well-being. Press Next to find out how.
       </Text>
+      <Button>Next</Button>
     </SafeAreaView>
   );
 };
@@ -34,6 +36,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     fontSize: 16,
     width: "75%",
+    marginBottom: "40%",
   },
 });
 
