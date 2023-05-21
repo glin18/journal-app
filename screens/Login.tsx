@@ -36,6 +36,10 @@ const Login = () => {
         <Image source={require("../assets/google.png")} />
         <Text style={styles.googleButtonText}>Continue with Google</Text>
       </TouchableOpacity>
+      <Text style={styles.agreeText}>
+        By continuing, you agree to our <Text>Terms and Conditions</Text> and{" "}
+        <Text>Privacy Policy</Text>.
+      </Text>
     </SafeAreaView>
   );
 };
@@ -116,6 +120,11 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "400",
     fontSize: 13,
+  },
+  agreeText: {
+    textAlign: "center",
+    fontSize: 10,
+    width: "60%",
   },
 });
 
