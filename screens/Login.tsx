@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 30,
-    marginTop: "22%",
+    marginTop: "20%",
   },
   orText: {
     color: "#666666",
