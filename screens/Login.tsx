@@ -5,6 +5,7 @@ import {
   SafeAreaView,
   TextInput,
   TouchableOpacity,
+  Image,
 } from "react-native";
 import React from "react";
 
@@ -31,6 +32,10 @@ const Login = () => {
         <Text style={styles.orText}>OR</Text>
         <View style={styles.horizontalLine} />
       </View>
+      <TouchableOpacity style={styles.googleButton}>
+        <Image source={require("../assets/google.png")} />
+        <Text style={styles.googleButtonText}>Continue with Google</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
@@ -81,6 +86,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 30,
+    marginTop: "17%",
   },
   orText: {
     color: "#666666",
@@ -92,6 +98,24 @@ const styles = StyleSheet.create({
     borderBottomColor: "#666666",
     borderBottomWidth: 1,
     width: "30%",
+  },
+  googleButton: {
+    marginTop: "5%",
+    backgroundColor: "#071116",
+    padding: 10,
+    width: "65%",
+    height: 60,
+    borderRadius: 15,
+    flexDirection: "row",
+    gap: 18,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  googleButtonText: {
+    color: "white",
+    textAlign: "center",
+    fontWeight: "400",
+    fontSize: 13,
   },
 });
 
