@@ -1,4 +1,11 @@
-import { View, Text, StyleSheet, SafeAreaView, Image } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  SafeAreaView,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 
 const Start = () => {
@@ -7,6 +14,9 @@ const Start = () => {
       <Image source={require("../../assets/echodolphin.png")} />
       <Text style={styles.welcomeText}>Welcome to EchoJournal</Text>
       <Text>Reflect. Grow. Thrive</Text>
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>START</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
@@ -16,6 +26,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#859FAB",
     alignItems: "center",
+    justifyContent: "space-around",
     gap: 10,
   },
   welcomeText: {
@@ -25,6 +36,19 @@ const styles = StyleSheet.create({
   mottoText: {
     fontWeight: "400",
     fontSize: 15,
+  },
+  button: {
+    backgroundColor: "black",
+    padding: 12,
+    width: "60%",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 50,
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 24,
+    fontWeight: "500",
   },
 });
 
