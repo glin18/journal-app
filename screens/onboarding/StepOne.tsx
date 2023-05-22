@@ -3,7 +3,7 @@ import React from "react";
 import Button from "../../components/onboarding/Button";
 import TopBar from "../../components/onboarding/TopBar";
 
-const StepOneToFour = () => {
+const StepOne = () => {
   return (
     <SafeAreaView style={styles.container}>
       <TopBar />
@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default StepOneToFour;
+export default StepOne;
