@@ -8,6 +8,8 @@ import Start from "./screens/onboarding/Start";
 import StepZero from "./screens/onboarding/StepZero";
 import StepOne from "./screens/onboarding/StepOne";
 import StepTwo from "./screens/onboarding/StepTwo";
+import StepThree from "./screens/onboarding/StepThree";
+import StepFour from "./screens/onboarding/StepFour";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +18,16 @@ const StackNavigator = () => {
     // I will nest the stack navigators later
     // A separate stack for the onboarding
     <Stack.Navigator>
+      <Stack.Screen
+        name="StepFour"
+        component={StepFour}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="StepThree"
+        component={StepThree}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen
         name="StepTwo"
         component={StepTwo}
