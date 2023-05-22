@@ -1,10 +1,12 @@
 import { View, Text, SafeAreaView, StyleSheet, Image } from "react-native";
 import React from "react";
 import Button from "../../components/onboarding/Button";
+import TopBar from "../../components/onboarding/TopBar";
 
 const StepZero = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <TopBar />
       <Image source={require("../../assets/woman.png")} />
       <Text style={styles.mainText}>
         EchoJournal is the ultimate AI powered journaling app

@@ -15,11 +15,11 @@ const StackNavigator = () => {
     // I will nest the stack navigators later
     // A separate stack for the onboarding
     <Stack.Navigator>
-      <Stack.Screen
+      {/* <Stack.Screen
         name="StepOne"
         component={StepOne}
         options={{ headerShown: false }}
-      />
+      /> */}
       <Stack.Screen
         name="StepZero"
         component={StepZero}
