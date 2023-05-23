@@ -23,43 +23,8 @@ const StackNavigator = () => {
     // A separate stack for the onboarding
     <Stack.Navigator>
       <Stack.Screen
-        name="StepEight"
-        component={StepEight}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="StepSeven"
-        component={StepSeven}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="StepSix"
-        component={StepSix}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="StepFive"
-        component={StepFive}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="StepFour"
-        component={StepFour}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="StepThree"
-        component={StepThree}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="StepTwo"
-        component={StepTwo}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="StepOne"
-        component={StepOne}
+        name="Start"
+        component={Start}
         options={{ headerShown: false }}
       />
       <Stack.Screen
@@ -68,11 +33,46 @@ const StackNavigator = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="Start"
-        component={Start}
+        name="StepOne"
+        component={StepOne}
         options={{ headerShown: false }}
       />
       <Stack.Screen
+        name="StepTwo"
+        component={StepTwo}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="StepThree"
+        component={StepThree}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="StepFour"
+        component={StepFour}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="StepFive"
+        component={StepFive}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="StepSix"
+        component={StepSix}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="StepSeven"
+        component={StepSeven}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="StepEight"
+        component={StepEight}
+        options={{ headerShown: false }}
+      />
+      {/* <Stack.Screen
         name="Signup"
         component={Signup}
         options={{ headerShown: false }}
@@ -81,7 +81,7 @@ const StackNavigator = () => {
         name="Login"
         component={Login}
         options={{ headerShown: false }}
-      />
+      /> */}
     </Stack.Navigator>
   );
 };
