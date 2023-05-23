@@ -1,7 +1,11 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 
-const TopBar = () => {
+interface Props {
+  step: Number;
+}
+
+const TopBar = ({ step = 0 }) => {
   return (
     <View style={styles.container}>
       <View style={styles.navContainer}>
@@ -13,13 +17,14 @@ const TopBar = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.stepBarContainer}>
-        <View style={styles.stepBar}></View>
-        <View style={styles.stepBar}></View>
-        <View style={styles.stepBar}></View>
-        <View style={styles.stepBar}></View>
-        <View style={styles.stepBar}></View>
-        <View style={styles.stepBar}></View>
-        <View style={styles.stepBar}></View>
+        <View style={styles.stepBarActive}></View>
+        <View style={step >= 1 ? styles.stepBarActive : styles.stepBar}></View>
+        <View style={step >= 2 ? styles.stepBarActive : styles.stepBar}></View>
+        <View style={step >= 3 ? styles.stepBarActive : styles.stepBar}></View>
+        <View style={step >= 4 ? styles.stepBarActive : styles.stepBar}></View>
+        <View style={step >= 5 ? styles.stepBarActive : styles.stepBar}></View>
+        <View style={step >= 6 ? styles.stepBarActive : styles.stepBar}></View>
+        <View style={step >= 7 ? styles.stepBarActive : styles.stepBar}></View>
       </View>
     </View>
   );

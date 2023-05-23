@@ -6,7 +6,7 @@ import TopBar from "../../components/onboarding/TopBar";
 const StepOne = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <TopBar />
+      <TopBar step={1} />
       <Text style={styles.mainText}>Walkthrough Step 1</Text>
       <Text style={styles.secondaryText}>
         <Text style={styles.bold}>Create Your Journal Entry:</Text> Tap on the
