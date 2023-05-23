@@ -6,7 +6,7 @@ import TopBar from "../../components/onboarding/TopBar";
 const StepSix = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <TopBar />
+      <TopBar step={6} />
       <Text style={styles.mainText}>Let's Enable Some Features</Text>
       <Text style={styles.secondaryText}>
         <Text style={styles.bold}>Microphone Access:</Text> To record audio

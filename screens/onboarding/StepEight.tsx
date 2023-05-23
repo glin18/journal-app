@@ -6,7 +6,7 @@ import TopBar from "../../components/onboarding/TopBar";
 const StepEight = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <TopBar />
+      <TopBar step={8} />
       <Text style={styles.mainText}>You're All Set</Text>
       <Text style={styles.secondaryText}>
         Congratulations on successfully setting up your account.{" "}

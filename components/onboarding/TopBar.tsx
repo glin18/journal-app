@@ -17,7 +17,6 @@ const TopBar = ({ step = 0 }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.stepBarContainer}>
-        <View style={styles.stepBarActive}></View>
         <View style={step >= 1 ? styles.stepBarActive : styles.stepBar}></View>
         <View style={step >= 2 ? styles.stepBarActive : styles.stepBar}></View>
         <View style={step >= 3 ? styles.stepBarActive : styles.stepBar}></View>
@@ -25,6 +24,7 @@ const TopBar = ({ step = 0 }) => {
         <View style={step >= 5 ? styles.stepBarActive : styles.stepBar}></View>
         <View style={step >= 6 ? styles.stepBarActive : styles.stepBar}></View>
         <View style={step >= 7 ? styles.stepBarActive : styles.stepBar}></View>
+        <View style={step >= 8 ? styles.stepBarActive : styles.stepBar}></View>
       </View>
     </View>
   );

@@ -6,7 +6,7 @@ import TopBar from "../../components/onboarding/TopBar";
 const StepFive = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <TopBar />
+      <TopBar step={5} />
       <Text style={styles.mainText}>Make it Yours</Text>
       <Text style={styles.secondaryText}>Choose Your Theme: </Text>
       <Text style={styles.secondaryText}>Adjust Font Size: </Text>

@@ -6,7 +6,7 @@ import TopBar from "../../components/onboarding/TopBar";
 const StepFour = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <TopBar />
+      <TopBar step={4} />
       <Text style={styles.mainText}>Walkthrough Step 4</Text>
       <Text style={styles.secondaryText}>
         <Text style={styles.bold}>Explore More: </Text> Dive deeper into
